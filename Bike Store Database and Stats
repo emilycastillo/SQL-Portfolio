@@ -1,0 +1,29 @@
+CREATE TABLE BIKES (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER, aisle INTEGER);
+
+insert into bikes values(1, "SCHWINN", 300, 150, 11);
+insert into bikes values(2, "TREK", 300, 150, 155);
+insert into bikes values(3, "WALMART", 80, 170, 18);
+insert into bikes values(4, "ONEYEAR", 300, 150, 14);
+insert into bikes values(5, "BOKE4", 800, 150, 13);
+insert into bikes values(6, "TREK5", 34563, 150, 122);
+insert into bikes values(7, "TREK6", 3453, 150, 122);
+insert into bikes values(8, "TREK7", 78960, 150, 10);
+insert into bikes values(9, "TREK8", 4530, 150, 15);
+insert into bikes values(10, "TREK9", 10, 150, 17);
+insert into bikes values (11, "TRE00K", 300, 50, 11);
+insert into bikes values(12, "TREK01", 8880, 150, 155);
+insert into bikes values(13, "TREK050", 3100, 150, 17);
+insert into bikes values(14, "TREK972", 3020, 150, 12);
+
+--what is the name and price of bikes?
+SELECT * FROM BIKES;
+SELECT name, PRICE FROM BIKES
+ORDER BY PRICE;
+
+--what is the quantity of each bike brand?
+SELECT NAME, QUANTITY FROM BIKES
+ORDER BY QUANTITY DESC;
+SELECT MAX(QUANTITY) FROM BIKES;
+
+--what brands have less than 100 in inventory?
+SELECT * FROM BIKEs WHERE QUANTITY > 100;
